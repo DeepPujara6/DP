@@ -1,0 +1,15 @@
+public class Practical1
+{
+
+	public static void main(String[] args) 
+	{
+	
+		float pi=3.14f;
+		int r=10;
+		float area = pi * r * r;
+		float perimeter = 2 * pi * r;
+		System.out.println("Area of pizza="+area);
+		System.out.println("Perimeter of pizza="+perimeter);	
+	}
+
+}
