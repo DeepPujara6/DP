@@ -1,0 +1,49 @@
+import java.util.Scanner;
+class Major
+{
+	String name;
+	int balance;
+	String Address;
+	
+	 void displayBalance()
+	 {
+
+		 System.out.println("Balance="+balance);
+	 }
+	 void putData()
+	 {
+		 System.out.println("Name="+name);
+		 System.out.println("Address="+Address);
+		 System.out.println("\n");
+		 
+	 }
+	
+}
+class Minor extends Major
+{
+	
+}
+
+public class Practical7 {
+
+	 public static void main(String[] args) 
+	{
+		Major ob1 = new Major();
+		Minor ob2 = new Minor();
+		ob1.name="Deep";
+		ob1.balance=15000;
+		ob1.Address="abc road,ahmedabad";		
+		ob1.displayBalance();
+		ob1.putData();
+		
+		ob2.name="Dhyey";
+		ob2.balance=20000;
+		ob2.Address="xyz road,ahmedabad";		
+		ob2.displayBalance();
+		ob2.putData();
+
+
+
+	}
+
+}
