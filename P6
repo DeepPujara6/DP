@@ -1,0 +1,22 @@
+import java.util.*;
+public class Practical6
+{
+	public static void main(String args[])
+	{
+		String username,password;
+		Scanner deep = new Scanner(System.in);
+		System.out.println("Enter Username:");
+		username = deep.nextLine();
+		System.out.println("Enter Password:");
+		password = deep.nextLine();
+		if(username.equals("deep") && password.equals("ict"))
+		{
+			System.out.println("Welcome "+username);
+		}
+		else
+		{
+			System.out.println("Invalid username or password");	
+		}
+	
+	}
+}
