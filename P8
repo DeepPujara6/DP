@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+class parent
+{
+	int id;
+	String name;
+	void getdata()
+	{
+		Scanner deep = new Scanner(System.in);
+		System.out.println("Enter id:");
+		id = deep.nextInt();
+		
+		System.out.println("Enter name:");
+		name = deep.next();
+	}
+}
+class child extends parent
+{
+	void putdata()
+	{
+		System.out.println("id="+id);
+		System.out.println("name="+name);
+	}
+}
+public class Practical8 {
+
+	public static void main(String[] args)
+	{
+		child ob1 = new child();
+		ob1.getdata();
+		ob1.putdata();
+
+	}
+
+}
