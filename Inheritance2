@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+class Member
+{
+	String Name,Address;
+	int Age,Phone_number;
+	float Salary=20000;
+	
+	void printSalary()
+	{
+		//Scanner deep = new Scanner(System.in);
+		//System.out.println("Enter Salary:");
+		//Name = deep.next(); 
+		System.out.println("Salary="+Salary);
+
+	}
+	
+}
+class Employee extends Member
+{
+	String specialization;
+}
+class Manager extends Member
+{
+	String department;
+}
+public class Inheritance2 {
+
+	public static void main(String[] args)
+	{
+		Employee ob1 = new Employee();
+		Manager ob2 = new Manager();
+		Member ob3 = new Member();
+		ob1.Name="Deep Pujara";
+		ob1.Address="XYZ building ABC road Ahmedabad";
+		ob1.Age=19;
+		ob1.Phone_number=1234567890;
+		ob1.Salary=15000;
+		
+		ob2.Name="James Bond";
+		ob2.Address="ABC building PQR road Ahmedabad";
+		ob2.Age=19;
+		ob2.Phone_number=0123456767;
+		ob2.Salary=20000;
+		
+		ob3.printSalary();
+		System.out.println("Employee Details: \n");
+		System.out.println("Name:"+ob1.Name);
+		System.out.println("Address:"+ob1.Address);
+		System.out.println("Age:"+ob1.Age);
+		System.out.println("Number:"+ob1.Phone_number);
+		System.out.println("Salary:"+ob1.Salary);
+		
+		System.out.println("\n");
+		
+		System.out.println("Manager Details: \n");
+		System.out.println("Name:"+ob2.Name);
+		System.out.println("Address:"+ob2.Address);
+		System.out.println("Age:"+ob2.Age);
+		System.out.println("Number:"+ob2.Phone_number);
+		System.out.println("Salary:"+ob2.Salary);
+	}
+
+}
