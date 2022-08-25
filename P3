@@ -1,0 +1,23 @@
+public class Practical3 
+{
+	public int Pen()
+	{
+		return 12*10;
+	}
+	public int Book()
+	{
+		return 6*40;
+	}
+
+	public static void main(String[] args) 
+	{
+		Practical3 ob1 = new Practical3();
+		System.out.println("Total price of pens="+ob1.Pen());
+		System.out.println("Total price of books="+ob1.Book());
+		System.out.println("Total amount to be paid="+(ob1.Pen()+ob1.Book()));
+		
+		
+		
+	}
+
+}
