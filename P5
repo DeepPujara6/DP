@@ -1,0 +1,29 @@
+import java.util.*;
+public class Practical5
+{
+	public static void main(String args[])
+	{
+		int name1,name2,mark1,mark2;
+		Scanner deep = new Scanner(System.in);
+		
+		System.out.println("Enter the name of Student 1=");
+		name1 = deep.nextInt();
+		System.out.println("Enter the name of Student 2=");
+		name2 = deep.nextInt();
+
+		System.out.println("Enter the mark of Student 1=");
+		mark1 = deep.nextInt();
+		System.out.println("Enter the mark of Student 1=");
+		mark2 = deep.nextInt();
+
+		if(mark1>mark2)
+		{
+			System.out.println("Student-1 is having higher score than Student-2");
+		}
+		else
+		{
+			System.out.println("Student-2 is having higher score than Student-1");
+		}
+	
+	}
+}
