@@ -1,0 +1,21 @@
+import java.util.*;
+public class Practical4
+{
+	public static void main(String args[])
+	{
+		int a,b,sum,sub,div,mul;
+		Scanner deep = new Scanner(System.in);
+		System.out.println("Enter the 1st Integer");
+		a = deep.nextInt();
+		System.out.println("Enter the 2nd Integer");
+		b = deep.nextInt();
+		sum = a+b;
+		sub=a-b;
+		mul=a*b;
+		div=a/b;
+		System.out.println("Addition of both the integers="+sum);
+		System.out.println("Subtraction of both the integers="+sub);
+		System.out.println("Multiplication of both the integers="+mul);
+		System.out.println("Division of both the integers="+div);	
+	}
+}
