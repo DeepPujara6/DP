@@ -1,0 +1,43 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Box
+{
+   int l,b,h,volume;
+   
+   Box()
+   {
+       Scanner deep=new Scanner(System.in);
+	   l = deep.nextInt();
+	   b = deep.nextInt();
+	   h = deep.nextInt();
+   }
+   void display()
+   {
+       System.out.print(" "+l);
+       System.out.print(" "+b);
+       System.out.print(" "+h);
+       
+   }
+   Box(int l, int b, int h)
+   {
+       
+   }
+   void volume()
+   {
+	   volume=l*b*h;
+	   System.out.print(" "+volume);
+   }
+   
+  
+}
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Box ob2 = new Box();
+		Box ob1 = new Box(10,20,30);
+		ob2.display();
+		ob2.volume();
+	}
+}
