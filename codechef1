@@ -1,0 +1,48 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class BC
+{
+	int id,years;
+	String name;
+	int totalsal=0;
+	int avgsal=0;
+	int[] salary = new int[20];
+	void getData()
+	{
+		Scanner deep=new Scanner(System.in);
+		id = deep.nextInt();
+		name = deep.next();
+		years = deep.nextInt();
+		for(int i=0;i<years;i++)
+		{
+			salary[i] = deep.nextInt(); 
+			for(int j=0;j<years;j++)
+			{
+				totalsal += salary[i]/3;
+				
+				
+			}
+			avgsal = totalsal/years;
+		}
+	}
+	void complete_sal()
+	{
+		System.out.println(totalsal);
+	}
+	void overall_sal()
+	{
+		System.out.println(avgsal);
+	}
+}
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    BC ob1 = new BC();
+		ob1.getData();
+		ob1.complete_sal();
+		ob1.overall_sal();
+	}
+}
